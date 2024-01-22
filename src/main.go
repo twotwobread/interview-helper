@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v3"
-	"github.com/twotwobread/interview-helper/health"
+	"github.com/twotwobread/interview-helper/src/health"
 )
 
 func main() {
