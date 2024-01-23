@@ -1,0 +1,5 @@
+[database]
+user = "PLACEHOLDER_USER"
+password = "PLACEHOLDER_PASSWORD"
+database = "PLACEHOLDER_DATABASE"
+port = PLACEHOLDER_PORT
