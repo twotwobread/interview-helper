@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  mongodb:
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD} 
+    image: mongo:latest
+    ports:
+      - "${MONGO_PORT}:27017"
+    env_file:
+      - ../.env
+    volumes:
+      - mongo_data:/data/db
+  sonarqube:
+    image: sonarqube:latest
+    ports:
+      - "9000:9000"
+      - "9092:9092"
+volumes:
+  mongo_data:
+
