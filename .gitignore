@@ -23,3 +23,9 @@ go.work
 # env file
 *.env
 config.toml
+
+# sonnarqube scanner file
+.scannerwork/**
+
+# report file
+*.json
