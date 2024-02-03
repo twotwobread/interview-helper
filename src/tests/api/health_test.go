@@ -11,7 +11,7 @@ import (
 
 func TestHealthController(t *testing.T) {
 	app := fiber.New()
-	health.Setup(app)
+	health.Route(app)
 
 	req, _ := app.Test(httptest.NewRequest("GET", "/health", nil))
 	assert.Equal(t, fiber.StatusOK, req.StatusCode, "Health Expected status code 200")

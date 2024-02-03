@@ -13,7 +13,7 @@ func main() {
 	config.MongodbSetup()
 
 	// api route setup
-	health.Setup(app)
+	health.Route(app)
 
 	app.Listen(":3000")
 }
